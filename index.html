@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link
+			rel="shortcut icon"
+			type="img/png"
+			href="https://cdn3.iconfinder.com/data/icons/green-business-1/750/3-512.png"
+		/>
+		<title>Sorting Visualizer</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+	</head>
+	<body>
+		<nav id="nav-bar">
+			<button id="generator">Generate New</button>
+			<button id="sort">Sort</button>
+			<input type="range" id="size-slider" min="10" max="200" value="20" />
+			<form>
+				<input type="radio" name="sorting-algo" value="0" checked />
+				<label>Selection Sort</label>
+				<input type="radio" name="sorting-algo" value="1" />
+				<label>Bubble Sort</label>
+				<input type="radio" name="sorting-algo" value="2" />
+				<label>Insertion Sort</label>
+				<input type="radio" name="sorting-algo" value="3" />
+				<label>Merge Sort</label>
+				<input type="radio" name="sorting-algo" value="4" />
+				<label>Quick Sort</label>
+			</form>
+		</nav>
+		<div id="array"></div>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
